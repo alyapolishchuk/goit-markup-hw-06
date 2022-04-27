@@ -66,6 +66,11 @@ body {
 
 .footer-link {
     color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-location {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer,
@@ -292,6 +297,7 @@ text-decoration: none;
 text-decoration: none;
 font-style: normal;
 display: block;
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Блокова модель*/
@@ -380,6 +386,7 @@ img {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-container,
@@ -390,11 +397,6 @@ img {
 /*.decisions {
     display: block;
 }*/
-
-.decisions-button {
-    margin-right: auto;
-    margin-left: auto;
-}
 
 /*.decisions {
     padding-top: 200px;
@@ -414,6 +416,8 @@ img {
     border-radius: 4px;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /*Переваги*/
@@ -581,16 +585,12 @@ img {
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-list-item:not(:last-child) {
     margin-right: 8px;
-}
-
-.icon-nav {
-    display: block;
-    fill: #757575;
-    margin-right: 10px
 }
 
 .adress-nav:hover>.icon-nav,
@@ -598,9 +598,17 @@ img {
     fill: #2196F3;
 }
 
+.adress-nav>.icon-nav {
+    display: block;
+    fill: currentColor;
+    margin-right: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .adress-nav {
     display: flex;
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .decisions {
@@ -638,6 +646,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-links:not(:last-child) {
@@ -651,6 +660,7 @@ img {
 
 .social-media-icon {
     fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-link:hover>.social-media-icon,
@@ -686,6 +696,10 @@ img {
     height: 44px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-list {
@@ -694,13 +708,7 @@ img {
 
 .join-list-item:not(:last-child) {
     margin-right: 10px;
-}
-
-.join-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+} 
 
 .join-link:hover,
 .join-link:focus {
@@ -734,6 +742,7 @@ img {
 
 .client-icon {
     fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link {
@@ -743,6 +752,7 @@ img {
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .client-link {
@@ -911,29 +921,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     }
 }
 
-.logo,
-.site-nav .link,
-.adress-nav,
-.list .button,
-.footer-link,
-.footer-location,
-.logo-name-footer,
-.decisions,
-.footer-location,
-.decisions-button,
-.button,
-.portfolio-link .portfolio-hidden-text,
-.adress-nav>.icon-nav,
-.social-media-link>.social-media-icon,
-.social-media-link,
-.join-link,
-.client-link,
-.client-link>.client-icon,
-.portfolio-link {
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-}
-
 .modal-title {
     text-align: center;
     margin-bottom: 12px;
@@ -981,8 +968,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     padding-left: 42px;
     cursor: pointer;
     outline: transparent;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+    /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms; */
 }
 
 .field.comment {
@@ -1035,8 +1022,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     position: absolute;
     left: 12px;
     top: 30px;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+    /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms; */
 }
 
 .agreement-box {
@@ -1079,8 +1066,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     border-radius: 2px;
     background-color:#ffffff;
     background-origin: border-box;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+    /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms; */
 }
 
 .custom-icon {
@@ -1119,7 +1106,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     border-radius: 4px;
     border: transparent;
     padding: 10px 29px;
-        cursor: pointer;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-btn-text {
